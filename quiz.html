@@ -1,15 +1,34 @@
 <main class="container">
-    <h2>Topic Quiz</h2>
+    <h2>Cloud Computing Knowledge Check</h2>
     <form id="topicQuiz" class="quiz-container">
-        <div class="question">
-    <p>1. Which cloud model provides the most control over the underlying hardware and OS?</p>
-    <label><input type="radio" name="q1" value="a"> SaaS</label><br>
-    <label><input type="radio" name="q1" value="b"> IaaS</label>
-</div>
-<div class="question">
-    <p>2. What term describes the ability to handle a growing workload by adding resources?</p>
-    <label><input type="radio" name="q2" value="a"> Scalability</label><br>
-    <label><input type="radio" name="q2" value="b"> Latency</label>
-</div>
+        
+        <div class="Question 1">
+            <p>1. Which cloud model provides the most control over the underlying hardware and OS?</p>
+            <label><input type="radio" name="q1" value="b"> IaaS</label><br>
+            <label><input type="radio" name="q1" value="a"> SaaS</label>
+        </div>
+
+        <div class="Quesiton 2">
+            <p>2. What term describes the ability to handle a growing workload by adding resources?</p>
+            <label><input type="radio" name="q2" value="a"> Scalability</label><br>
+            <label><input type="radio" name="q2" value="b"> Latency</label>
+        </div>
+
+        <div class="Question 3">
+            <p>3. Which deployment model is dedicated to a single organization?</p>
+            <label><input type="radio" name="q3" value="a"> Public Cloud</label><br>
+            <label><input type="radio" name="q3" value="b"> Private Cloud</label>
+        </div>
+
+        <div class="Question 4">
+            <p>4. Software as a Service (SaaS) is typically accessed via:</p>
+            <label><input type="radio" name="q4" value="a"> A web browser</label><br>
+            <label><input type="radio" name="q4" value="b"> Physical hardware installation</label>
+        </div>
+
+        <button type="button" onclick="checkQuiz()">Submit Quiz</button>
     </form>
+
+    <!-- This is where the grade will appear -->
+    <div id="quizResult" style="margin-top: 20px; font-weight: bold; font-size: 1.2rem; color: #2c3e50;"></div>
 </main>
